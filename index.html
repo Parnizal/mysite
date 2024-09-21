@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Zamanlayıcısı</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Zamanlayıcısı</h1>
+        <div class="timer">
+            <p id="time-display">25:00</p>
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+        </div>
+        <div id="tree-count">Dikilen Fidan: 0</div> <!-- Fidan sayısını göster -->
+        <div class="buttons">
+            <button id="start-button">Başlat</button>
+            <button id="stop-button">Durdur</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
